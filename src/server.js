@@ -38,8 +38,7 @@ app.use(cors());
 // token endpoints
 // **Warning**: these endpoints should probably be guarded with additional authentication & authorization for production use
 const sttAuthenticator = new IamTokenManager({
-  username: process.env.SPEECH_TO_TEXT_USERNAME,
-  password: process.env.SPEECH_TO_TEXT_PASSWORD,
+  api: process.env.SPEECH_TO_TEXT_API
 });
 
 // speech to text token endpoint
